@@ -205,7 +205,9 @@ FROM station_data
 
 
 
+/* JOIN is used to join to two tables to create a much more descriptive view of your data.In here the parent table supplies data and child table receives data*/
 
+/*1. Using JOIN operation*/
 SELECT 
 station_location.report_code,
 state,
