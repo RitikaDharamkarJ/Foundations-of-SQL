@@ -205,3 +205,19 @@ FROM station_data
 
 
 
+
+SELECT 
+station_location.report_code,
+state,
+zip_code,
+weather_forecaster,
+time,
+city,
+accuracy
+
+FROM station_location INNER JOIN report_information
+ON station_location.report_code = report_information.report_code
+
+
+
+
